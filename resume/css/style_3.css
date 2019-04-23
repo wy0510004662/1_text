@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  
+}
+#my{
+  width: 1000px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+#left{
+  width: 100%;
+  height: 80px;
+  background-color: grey;
+  font-size: 20px;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+section{
+ height: 130px;
+ box-sizing: border-box;
+ margin-bottom: 2px;
+}
+section .message-left{
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-color:gainsboro;
+  line-height: 130px;
+ text-align: center;
+}
+section .message-right{
+  float: right;
+  width: 70%;
+  height: 100%;
+  
+}
