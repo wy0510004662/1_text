@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            clear: both;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 */
+        #left {
+            /* float: left; */
+
+            /* position: absolute;
+            left: 0;
+            top: 0; */
+            flex: 3;
+
+            /* width: 30%; */
+            background-color: yellow
+        }
+
+        #right {
+            /* position: absolute;
+            right: 0;
+            top: 0; */
+
+            /* float: right; */
+            flex: 7;
+            /* width: 70%; */
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度  -->
+    <div id="left">left</div>
+    <div id="right">right</div>
+
+    <!-- 2 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化 -->
+</body>
+
+</html>

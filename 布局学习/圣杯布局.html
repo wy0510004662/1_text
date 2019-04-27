@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            background-color: red;
+            padding-left: 200px;
+            padding-right: 200px;
+            min-width: 400px;
+            overflow: hidden;
+       
+        }
+        .main{
+            float: left;
+            width: 100%;
+            background-color: yellow;
+            height: 200px;
+        }
+        .container .left,.container .right{
+            float: left;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        .container .left{
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+        .container .right{
+            margin-left: -200px;
+            position: relative;
+            left: -200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 容器 -->
+    <div class="container">
+        <div class="main">中间拦</div>
+        <div class="left">左边拦</div>
+        <div class="right">右边拦</div>
+    </div>
+</body>
+
+</html>

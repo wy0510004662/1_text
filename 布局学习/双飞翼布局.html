@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+      
+        .container {
+            min-width: 400px;
+            width: 100%;
+        }
+
+        .left,
+        .right {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .main {
+            float: left;
+            width: 100%;
+            height: 200px;
+            background-color: red;
+        }
+       .main-content{
+           margin: 0 200px;
+       }
+        .left {
+            margin-left: -100%;
+        }
+
+        .right {
+            margin-left: -200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 容器 -->
+    <div class="container">
+        <div class="main">
+            <div class="main-content"> 中间拦</div>
+        </div>
+        <div class="left">左边拦</div>
+        <div class="right">右边拦</div>
+    </div>
+</body>
+
+</html>

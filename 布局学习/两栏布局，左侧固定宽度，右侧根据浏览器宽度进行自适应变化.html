@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+            line-height: 3;
+            text-align: center;
+
+        }
+
+        #left {
+            width: 200px;
+            /* 1 利用float实现 */
+            /* float: left; */
+            
+            /* 2 position实现 */
+            /* position: absolute;
+            left: 0;
+            top: 0; */
+
+            background-color: red;
+
+
+
+        }
+
+        #right {
+            /* 1 利用float实现 */
+            /* float: right; */
+            /* overflow: hidden; */
+            background-color: gold;
+
+            /* 2 position实现 */
+            /* position: absolute;
+            right: 0;
+            top: 0; */
+
+            /* width: 100%; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">left</div>
+        <div id="right">right</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 通用格式 */
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        /* 头部格式 */
+        #web-header {
+            width: 100%;
+            background-color: dimgray;
+        }
+
+        #web-header #web-header-content {
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+            height: 100px;
+        }
+
+        #web-header #web-header-content #web-header-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+        #web-header #web-header-content #web-header-right ul li {
+            float: left;
+            margin-left: 2px;
+            text-decoration: underline;
+        }
+
+        #web-header #web-header-content #web-header-left {
+            font-size: 25px;
+            line-height: 100px;
+            width: 200px;
+        }
+
+        #banner {
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+        }
+
+        #banner #box {
+            position: absolute;
+            bottom: 0px;
+            right: 10%;
+
+        }
+
+        #banner ul li {
+            float: left;
+            margin-left: 3px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid black;
+            line-height: 15px;
+            text-align: center;
+            color: black;
+            margin-bottom: 10px;
+            transition: 0.6s all;
+        }
+
+        #banner ul li:hover {
+            background-color: beige;
+        }
+
+        #nav-content {
+            overflow: hidden;
+            width: 980px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #nav-content ul li {
+            float: left;
+            margin-left: 4px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 5px;
+            color: black;
+            border: 1px solid black;
+            height: 40px;
+            width: 60px;
+            border-radius: 2px;
+            background-color: grey;
+        }
+
+        /* 如何画一条虚线？ */
+        #line {
+            background-color: black;
+            width: 100%;
+            height: 1px;
+            position: relative;
+            top: -2px;
+        }
+
+        #nav-content ul li:hover {
+            background-color: aliceblue;
+            border-bottom: white;
+
+        }
+
+        #myWeb-content {
+            margin: 0 auto;
+            width: 980px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 1px solid black; */
+            
+        }
+        #myWeb-content div{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            line-height: 200px;
+            text-align: center;
+        }
+        footer{
+            background-color: slategrey;
+            height: 100px;
+            width: 100%;
+
+        }
+        footer div{
+            width: 980px;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myWeb">
+        <header id="web-header">
+            <div id="web-header-content">
+                <div id="web-header-left">
+                    <strong>logo</strong>
+                </div>
+                <div id="web-header-right">
+                    <ul>
+                        <li><a>Github</a></li>
+                        <li><a>Register</a></li>
+                        <li><a>login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="banner">
+            <div id="box">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+        </div>
+
+        <nav id="nav">
+            <div id="nav-content">
+                <ul>
+                    <li>HOME</li>
+                    <li>PROFILE</li>
+                    <li>ABOUT</li>
+                </ul>
+            </div>
+            <div id="line"></div>
+        </nav>
+        <div>
+            <div id="myWeb-content">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>9</div>
+            </div>
+        </div>
+
+<footer>
+    <div>@2018 wywywyywyw</div>
+</footer>
+        </section>
+    </div>
+</body>
+
+</html>
